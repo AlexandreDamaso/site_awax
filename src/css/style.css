@@ -308,7 +308,7 @@ header {
     justify-content: center;
     color: #FFFFFF;
     text-align: center;
-    background-color: rgba( 0, 0, 0, 0.5);
+    background-color: rgba( 0, 0, 0, 0.8);
 
 }
 .ourprojects-corpo-conteudo-foto-area .fotoinfo h5 {
@@ -318,4 +318,100 @@ header {
 }
 .ourprojects-corpo-conteudo-foto-area:hover .fotoinfo {
     display: flex;
+}
+.ourteam {
+    display: flex;
+    justify-content: center;
+    background-image: url(../img_fotos/foto4.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.ourteam .padrao-corpo {
+    background-color: rgba( 0, 0, 0, 0.8);
+    width: 100vw;
+}
+.ourteam-corpo-conteudo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.ourteam-corpo-conteudo-teams {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 25px;
+    width: 100vw;
+    max-width: 1140px;
+    flex-wrap: wrap;
+}
+.ourteam-corpo-conteudo-teams .colaborador {
+    width: 350px;
+    height: 430px;
+    background-color: #FFFFFF;
+    margin: 10px;
+    padding: 45px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+.colaborador-foto {
+    display: flex;
+    justify-content: center;
+}
+.colaborador-foto img {
+    width: 183px;
+    height: 183px;
+}
+.ourteam-pointers {
+    width: 100vw;
+    height: 20px;
+    position: relative;
+    color: #FFFFFF;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.ourteam-pointers .pointer {
+    width: 15px;
+    height: 15px;
+    border: 2px solid #B28756;
+    border-radius: 8px;
+    margin: 0px 5px;
+}
+.ourteam-pointers .active {
+    background-color: #B28756;
+}
+.padrao-conteudo-titulo-claro {
+    color: #000000;
+    font-weight: 600;
+    font-size: 18px;
+    text-transform: uppercase;
+    margin: 0px 20px 6px 20px;
+    text-align: center;
+}
+.padrao-conteudo-descricao-claro {
+    font-size: 14px;
+    font-weight: normal;
+    color: #777777;
+    text-align: center;
+    margin: 0px 20px;
+}
+.redesociais {
+    display: flex;
+    justify-content: space-between;
+}
+.redesociais-icon {
+    width: 33px;
+    height: 33px;
+    background-color: #777777;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 17px;
+    cursor: pointer;
+    font-size: 40px;
+}
+.redesociais-icon:hover {
+    background-color: #B28756;
 }
