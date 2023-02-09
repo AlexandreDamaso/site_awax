@@ -233,36 +233,89 @@ header {
     display: flex;
     justify-content: center;
 }
-.padrao-corpo a {
+.padrao-corpo {
     display: flex;
+    align-items: center;
+}
+.ourprojects-corpo-conteudo-menu {
+    display: inline-block;
     justify-content: center;
 }
-.ourprojects-corpo-conteudo-menu ul {
-    display: flex;
-    justify-content: center;
+.ourprojects-corpo-conteudo-menu {
+    border: 1px solid #CCCCCC;
+    background-color: #EDEDED;
+    border-radius: 30px;
+    padding: 0px 30px;
 }
+.ourprojects-corpo-conteudo-menu ul,
 .ourprojects-corpo-conteudo-menu li {
     list-style: none;
 }
-.ourprojects-corpo-conteudo-menu a {
-    font-size: 14px;
-    color: #000000;
-    text-decoration: none;
+.ourprojects-corpo-conteudo-menu li {
+    display: inline-block;
+    padding: 22px 22px 18px 22px;
     text-transform: uppercase;
-    background-color: #ededed;
-    padding: 22px 22px;
-    border: 1px solid #CCCCCC;
+    font-size: 14px;
+    border-left: 1px solid #CCCCCC;
+    cursor: pointer;
+    border-bottom: 3px solid #EDEDED;
 }
-
-display: flex;
-align-items: center;
-border-bottom: 6px solid #000000;
-
-.ourprojects-botao {
-    display: flex;
+.ourprojects-corpo-conteudo-menu li:hover,
+.ourprojects-corpo-conteudo-menu .active {
+    border-bottom: 3px solid #B28756;
+}
+.ourprojects-corpo-conteudo-menu li:first-child {
+    border-left: 0px;
+}
+.ourprojects-botao a {
+    display: inline-block;
     justify-content: center;
 }
-.ourprojects-corpo-conteudo-menu li {
-    border-bottom: 6px solid #B28756;
-    color: #999999;
+.ourprojects-corpo-conteudo-menu a {
+    text-decoration: none;
+    color: #555555;
+}
+.ourprojects-corpo-conteudo-fotos {
+    margin-top: 25px;
+    width: 100vw;
+    max-width: 1140px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.ourprojects-corpo-conteudo-foto {
+    width: 280px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.ourprojects-corpo-conteudo-foto-area {
+    width: 260px;
+    height: 160px;
+    margin: 13px 10px;
+}
+.ourprojects-corpo-conteudo-foto img {
+    width: inherit;
+    height: inherit;
+}
+.ourprojects-corpo-conteudo-foto-area .fotoinfo {
+    position: absolute;
+    width: inherit;
+    height: inherit;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #FFFFFF;
+    text-align: center;
+    background-color: rgba( 0, 0, 0, 0.5);
+
+}
+.ourprojects-corpo-conteudo-foto-area .fotoinfo h5 {
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: 600;
+}
+.ourprojects-corpo-conteudo-foto-area:hover .fotoinfo {
+    display: flex;
 }
